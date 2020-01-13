@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .page{
+        width: 100%;
+        height: 100vh;
+        background-color: green;
+        position: relative;
+    }
+
+    .loadingbar{
+        width: 500px;
+        height: 50px;
+        background-color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .loading{
+        width: 50%;
+        height: 100%;
+        background-color: black;
+    }
+
+    .loadingtext{
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 36px;
+        
+    }
+
+
+    </style>
+</head>
+
+
+<body>
+<div class="page">
+    <div class="loadingbar"> 
+        <div class="loading"></div>
+        <div class="loadingtext"> 0% </div>
+    </div>
+    
+</div>
+
+    <script>
+        setTimeout(countDown, 5000)
+
+        var time = 5;
+        var lol;
+
+        function countDown() {
+            
+            console.log("倒數" + time + " 秒");
+            time--;
+            if(time >=0 )
+            {
+                setTimeout(countDown, 1000)
+            }
+            else{
+                console.log("gggggggggg");
+            }
+        }
+
+       
+    </script>
+</body>
+
+</html>

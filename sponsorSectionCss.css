@@ -1,0 +1,90 @@
+.sponsor{
+    width: 100%;
+    background: rgb(40, 57, 84);
+    background: linear-gradient(144deg, rgba(40, 57, 84, 1) 0%, rgba(29, 35, 49, 1) 51%);
+    padding-bottom: 50px;
+}
+
+.sponsor_banner_area{
+    width: 100%;
+    padding-bottom:50px;
+}
+
+.sponsor_banner{
+    width: 100%;
+    height: 600px;
+    background-image:url('img/apexbanner.jpg');
+    
+}
+
+.sponsor_areaGroup{
+    width: 100%;
+}
+
+.sponsor_area_Upper{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.sponsor_area_A{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    
+}
+
+.sponsor_area_B{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.sponsor_area_C{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.sponsor_area_D{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.sponsor_area_Lower{
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+
+.sponsor_area_E{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    
+}
+.sponsor_area_F{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    
+}
+.sponsor_area_G{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    
+}
+.sponsor_area_H{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    
+}

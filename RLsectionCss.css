@@ -1,0 +1,78 @@
+.RL_section {
+    width: 100%;
+    background: rgb(40, 57, 84);
+    background: linear-gradient(144deg, rgba(40, 57, 84, 1) 0%, rgba(29, 35, 49, 1) 51%);
+}
+.RL_section_banner {
+    width: 100%;
+    position: relative;
+}
+.swiper-container {
+    width: 100%;
+    height: 800px;
+    background-attachment: fixed;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+/* define play area */
+.RL_section_playerarea {
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+/* player picture area */
+.RL_section_playerGroup{
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
+/* player picture */
+.RL_section_player{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.RL_section_player:hover{
+    opacity: 1;
+    border-color: white;
+    border-radius: 1px;
+}
+
+
+.RL_section_playerintro{
+    width: 100%;
+    height: 500px;
+    background-color: #22385B;
+    margin:auto;
+    display: none;
+    animation: fadeEffect 1s;
+    padding: 15px;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.active{
+    display:block;
+}
+.IntroRL{
+    color: white;
+    font-size: 22px;
+    line-height: 45px;
+    padding :0 35px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+

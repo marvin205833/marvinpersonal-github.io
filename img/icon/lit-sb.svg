@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="33px" viewBox="0 0 35 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>sb-lit</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-52.4%" y="-47.6%" width="204.8%" height="204.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0941176471   0 0 0 0 0.631372549   0 0 0 0 0.97254902  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Game-Icons" transform="translate(-199.000000, -14.000000)" fill="#FFFFFF">
+            <g id="sb-lit" filter="url(#filter-1)" transform="translate(206.000000, 19.000000)">
+                <path d="M20.5884,12.5037 L9.3704,12.5037 L9.3704,0.9837 C15.8284,0.0657 21.9694,5.7167 20.5884,12.5037" id="Fill-11"></path>
+                <path d="M19.935,14.4788 C18.291,18.3708 13.764,20.8818 9.379,20.2808 L9.379,14.4788 L19.935,14.4788 Z" id="Fill-13"></path>
+                <path d="M4.293,12.5047 L0.785,12.5047 C-0.224,9.7417 1.59,4.8747 4.293,3.1167 L4.293,12.5047 Z" id="Fill-15"></path>
+                <path d="M1.3818,14.4764 L4.2938,14.4764 L4.2938,18.1644 C3.0228,17.1604 2.0768,15.9604 1.3818,14.4764" id="Fill-17"></path>
+            </g>
+        </g>
+    </g>
+</svg>

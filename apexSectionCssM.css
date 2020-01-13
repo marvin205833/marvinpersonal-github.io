@@ -1,0 +1,54 @@
+@media (max-width: 375px) {
+    .apex_section{
+        height:100%;
+    }
+
+
+    .apex_section_banner {
+        height:375px;
+    }
+
+    .apex_section_banner .swiper-container {
+        height: 375px;
+        background-attachment: fixed;
+    }
+
+    .apex_section_playerarea {
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiperapexplayer {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .apex_section_player_intro {
+        padding-top: 30px;
+        height:100%;
+        background-image: none;
+        background-position: center;
+        background-size: cover;
+        
+    }   
+    
+    .introArea{
+        width:100%;
+        height:100%;
+    }
+
+    .Introapex{
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+        padding :0 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .swiper-slide{
+        height: 375px;
+    }
+}

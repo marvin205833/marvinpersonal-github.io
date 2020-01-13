@@ -1,0 +1,192 @@
+.navall {
+    width: 20%;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    left: -310px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+.navArea {
+    width: 310px;
+    height: 100%;
+    background: rgb(40, 57, 84);
+    background: linear-gradient(144deg, rgba(40, 57, 84, 1) 0%, rgba(29, 35, 49, 1) 51%);
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+
+.navArea .navbar {
+    text-decoration: none;
+    font-size: 27px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.navArea li:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.navAreaOpenbtn {
+    width: 100px;
+    height: 100px;
+    background: rgb(40, 57, 84);
+    background: linear-gradient(144deg, rgba(40, 57, 84, 1) 0%, rgba(29, 35, 49, 1) 51%);
+}
+
+.navArea .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+ul {
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.TSM{
+    padding-bottom: 15px;
+}
+
+.lol{
+    padding-bottom: 15px;
+}
+
+.fortnite{
+    padding-bottom: 15px;
+}
+
+.pubg{
+    padding-bottom: 15px;
+}
+
+.r6{
+    padding-bottom: 15px;
+}
+
+.apex{
+    padding-bottom: 15px;
+}
+
+.smash{
+    padding-bottom: 15px;
+}
+
+.rl{
+    padding-bottom: 15px;
+}
+
+.sponsor{
+    padding-bottom: 15px;
+}
+
+
+
+.TSMicon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/TSM/TSMlogo.png');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.lolicon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/icon/lit-lol.svg');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.fortniteicon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/icon/lit-fn.svg');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.pubgicon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/icon/lit-pubg.svg');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.r6icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/icon/lit-rnbw.svg');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.apexicon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/icon/lit-apex.svg');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.smashicon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/icon/lit-sb.svg');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.rlicon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/icon/lit-rl.svg');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.sponsoricon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/icon/partnership.svg');
+    background-position: center;
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}

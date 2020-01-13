@@ -1,0 +1,143 @@
+@media (max-width: 1024px) {
+    .intro {
+        padding: 25px;
+    }
+    .intro_whatistsmA {
+        width: 100%;
+    }
+    .intro_whatistsm_picA {
+        width: 25%;
+    }
+    .intro_whatistsm_textA {
+        width: 75%;
+    }
+    .tsm_textA {
+        font-size: 20px;
+        color: white;
+        line-height: 27px;
+        margin: 10px;
+        padding: 20px;
+    }
+    .intro_whatistsmB {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .intro_whatistsm_picB {
+        width: 25%;
+    }
+    .intro_whatistsm_textB {
+        width: 75%;
+    }
+    .tsm_textB {
+        font-size: 20px;
+        color: white;
+        line-height: 27px;
+        padding: 25px;
+    }
+    .intro_career {
+        width: 100%;
+        padding: 0;
+    }
+    .intro_careerA {
+        width: 100%;
+        background-image: url('img/TSM/TSMcontent03.jpg');
+        margin-right: 10px;
+    }
+    .intro_careerB {
+        width: 100%;
+        background-image: url('img/TSM/TSMcontent04.jpg');
+        margin-right: 10px;
+    }
+    .intro_careerC {
+        width: 100%;
+        background-image: url('img/TSM/TSMcontent05.jpg');
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro_whatistsmA {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .intro_whatistsm_picA {
+        width: 100%;
+        height: 300px;
+        float: none;
+        background-image: url('img/TSM/TSMcontent01.jpg');
+    }
+    .intro_whatistsm_textA {
+        width: 100%;
+        height: 100%;
+        background-color: #22385B;
+        float: none;
+    }
+    .tsm_textA {
+        font-size: 20px;
+        color: white;
+        line-height: 25px;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .intro_whatistsmB {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .intro_whatistsm_picB {
+        width: 100%;
+        height: 300px;
+        float: none;
+        background-image: url('img/TSM/TSMcontent01.jpg');
+    }
+    .intro_whatistsm_textB {
+        width: 100%;
+        height: 100%;
+        background-color: #22385B;
+        float: none;
+    }
+    .tsm_textB {
+        font-size: 20px;
+        color: white;
+        line-height: 25px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .intro_career {
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .intro_careerA {
+       margin-bottom: 20px;
+    }
+
+    .intro_careerB {
+        margin-bottom: 20px;
+     }
+
+     .intro_career_text_A{
+        color: white;
+        margin:auto;
+        text-shadow: black;
+        padding: 20px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .intro_career_text_C{
+        color: white;
+        margin:auto;
+        text-shadow: black;
+        padding: 20px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tabs 分頁</title>
+
+    <style>
+        .tabs-btn-group {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .tabs-btn-group .tabs-btn {
+            width: 100px;
+            height: 70px;
+            background-color: gray;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .tabs-btn-group .tabs-btn.active {
+            background-color: hotpink;
+            font-size: 20px;
+        }
+
+        .tabs-content-group .tabs-content {
+            background-color: grey;
+            padding: 20px 10px;
+            display: none;
+        }
+
+        .tabs-content-group .tabs-content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="tabs-btn-group">
+            <div class="tabs-btn">TAB-1</div>
+            <div class="tabs-btn">TAB-2</div>
+            <div class="tabs-btn">TAB-3</div>
+        </div>
+        <div class="tabs-content-group">
+            <div class=" tabs-content ">
+                <h1>TAB-1</h1>
+                <span>TAB-1Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum veritatis doloremque
+                    assumenda amet inventore, laudantium unde repellendus magnam. Explicabo, quas consequuntur?
+                    Repellat, quis magnam! Dicta quaerat quo quam animi.</span>
+            </div>
+            <div class=" tabs-content">
+                <h1>TAB-2</h1>
+                <span>TAB-2Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum veritatis doloremque
+                    assumenda amet inventore, laudantium unde repellendus magnam. Explicabo, quas consequuntur?
+                    Repellat, quis magnam! Dicta quaerat quo quam animi.</span>
+            </div>
+            <div class=" tabs-content">
+                <h1>TAB-3</h1>
+                <span>TAB-3Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum veritatis doloremque
+                    assumenda amet inventore, laudantium unde repellendus magnam. Explicabo, quas consequuntur?
+                    Repellat, quis magnam! Dicta quaerat quo quam animi.</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tabs_btn = document.querySelectorAll(".tabs-btn")
+        var tabs_content = document.querySelectorAll(".tabs-content")
+
+
+        for (let index = 0; index < tabs_btn.length; index++) {
+            const tabs_btnS = tabs_btn[index];
+            const tabs_contentS = tabs_content[index];
+            // console.log(tabs_btnS);
+            // console.log(tabs_contentS);
+
+            tabs_btnS.onclick = function(){
+                clearAllActive()
+                tabs_btnS.classList.add("active")
+                tabs_contentS.classList.add("active")
+            }
+
+        }
+
+        function clearAllActive(){
+            for (let index = 0; index < tabs_btn.length; index++) {
+                tabs_btn[index].classList.remove("active")
+                tabs_content[index].classList.remove("active")
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

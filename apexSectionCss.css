@@ -1,0 +1,53 @@
+.apex_section {
+    width: 100%;
+    background: rgb(40, 57, 84);
+    background: linear-gradient(144deg, rgba(40, 57, 84, 1) 0%, rgba(29, 35, 49, 1) 51%);
+}
+.apex_section_banner {
+    width: 100%;
+    position: relative;
+}
+.apex_section_banner .swiper-container {
+    width: 100%;
+    background-attachment: fixed;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+.apex_section_playerarea {
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.apex_section_player_pic {
+    width: 100%;
+}
+.apex_section_player_intro {
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+}
+.swiperapex-container{
+    width: 100%;
+}
+.swiperapexplayer {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+.swiperapexplayer .swiper-slide{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.Introapex{
+    color: white;
+    font-size: 22px;
+    line-height: 45px;
+    padding :0 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}

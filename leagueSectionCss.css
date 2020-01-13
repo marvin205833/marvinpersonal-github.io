@@ -1,0 +1,67 @@
+.lol_section {
+    width: 100%;
+    background: rgb(40, 57, 84);
+    background: linear-gradient(144deg, rgba(40, 57, 84, 1) 0%, rgba(29, 35, 49, 1) 51%);
+    overflow: hidden;
+}
+
+.lol_section_banner {
+    width: 100%;
+    position: relative;
+}
+
+.lol_section_banner .swiper-container {
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.lol_section_playerarea {
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.lol_section_player_pic {
+    width: 100%;
+}
+
+.lol_section_player_intro {
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    background-image: url("/img/TSM/TSMbanner01.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.swiperlol-container {
+    width: 100%;
+}
+
+.swiperlolplayer {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+
+.swiperlolplayer .swiper-slide {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.IntroLOL{
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    padding :0 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

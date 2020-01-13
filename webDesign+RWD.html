@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Monster Hunter World</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .Container {
+            max-width: 1140px;
+            margin: auto;
+        }
+
+        .Nav {
+            width: 100%;
+            height: 30vh;
+            background-image: url("/MHW/title01.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            border-bottom: white 5px double;
+        }
+
+        .LogoArea {
+            width: 100%;
+            height: 100%;
+        }
+
+        .Logo {
+            width: 80px;
+            height: 240px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-image: url("/MHW/logo.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: black 5px 5px 5px;
+            margin-left: 10px;
+            float: left;
+        }
+
+        .icon {
+            width: 80%;
+            float: left;
+            margin-left: 30px;
+            margin-top: 170px;
+        }
+
+        .icon01 {
+            width: 60px;
+            height: 60px;
+            background-image: url("/MHW/monsterIcon01.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: white 2px solid;
+            display: inline-block;
+        }
+
+        .icon01:hover {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 0.3s;
+            border: white 4px solid;
+        }
+
+        .icon02 {
+            width: 60px;
+            height: 60px;
+            background-image: url("/MHW/monsterIcon02.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: white 2px solid;
+            margin-left: 15px;
+            display: inline-block;
+
+        }
+
+        .icon02:hover {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 0.3s;
+            border: white 4px solid;
+        }
+
+        .icon03 {
+            width: 60px;
+            height: 60px;
+            background-image: url("/MHW/monsterIcon03.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: white 2px solid;
+            margin-left: 15px;
+            display: inline-block;
+
+        }
+
+        .icon03:hover {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 0.3s;
+            border: white 4px solid;
+        }
+
+
+        .icon04 {
+            width: 60px;
+            height: 60px;
+            background-image: url("/MHW/monsterIcon04.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: white 2px solid;
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .icon04:hover {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 0.3s;
+            border: white 4px solid;
+        }
+
+
+        .icon05 {
+            width: 60px;
+            height: 60px;
+            background-image: url("/MHW/monsterIcon05.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: white 2px solid;
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .icon05:hover {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 0.3s;
+            border: white 4px solid;
+        }
+
+
+        .icon06 {
+            width: 60px;
+            height: 60px;
+            background-image: url("/MHW/monsterIcon06.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: white 2px solid;
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .icon06:hover {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 0.3s;
+            border: white 4px solid;
+        }
+
+        .icon07 {
+            width: 60px;
+            height: 60px;
+            background-image: url("/MHW/monsterIcon07.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: white 2px solid;
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .icon07:hover {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 0.3s;
+            border: white 4px solid;
+        }
+
+        .icon08 {
+            width: 60px;
+            height: 60px;
+            background-image: url("/MHW/unknown.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: white 2px solid;
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .icon08:hover {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 0.3s;
+            border: white 4px solid;
+        }
+
+        .Banner {
+            width: 100%;
+            height: 70vh;
+            background-image: url("/MHW/bannerPic01.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-bottom: white 5px double;
+        }
+
+        .Banner:hover {
+            background-image: url("/MHW/bannerPic02.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .Content {
+            width: 100%;
+        }
+
+        .monster01 {
+            width: 100%;
+        }
+
+        .block {
+            width: 100%;
+
+            background-image: url("/MHW/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .monster01_L {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+
+        .monster01_R {
+            width: 50%;
+            float: left;
+        }
+
+        .monsterPic01 {
+            width: 100%;
+            height: 50vh;
+            background-image: url("/MHW/monsterIcon01.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .monsterPic01:hover {
+            width: 100%;
+            background-image: url("/MHW/monsterPic01.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .monsterInfo01 {
+            width: 100%;
+            color: white;
+            line-height: 40px;
+            font-weight: 900;
+            padding: 30px;
+        }
+
+        #spacing01 {
+            width: 100%;
+            height: 100vh;
+            background-image: url("/MHW/spacingPic01.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            padding: none;
+        }
+
+        .mask01 {
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .mask01:hover {
+            width: 100%;
+            height: 100%;
+            background-image: url("/MHW/spacingPic0101.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.0);
+            transition: 0.6s;
+
+        }
+
+        .monster02 {
+            width: 100%;
+
+            background-image: url("/MHW/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .monsterPic02 {
+            width: 50%;
+            height: 50vh;
+            margin-top: 10px;
+            background-image: url("/MHW/monsterIcon02.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: right;
+
+        }
+
+        .monsterPic02:hover {
+            width: 50%;
+            height: 50vh;
+            margin-top: 10px;
+            background-image: url("/MHW/monsterPic02.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .monsterInfo02 {
+            width: 50%;
+            padding-top: 60px;
+            padding-left: 50px;
+            color: white;
+            line-height: 40px;
+            font-weight: 900;
+        }
+
+        #spacing02 {
+            width: 100%;
+            height: 100vh;
+            background-image: url("/MHW/spacingPic02.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+
+        .mask02 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .mask02:hover {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.0);
+            transition: 0.3s;
+        }
+
+        .monster0304 {
+            width: 100%;
+            background-image: url("/MHW/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .monster03 {
+            width: 100%;
+        }
+
+        .monsterPic03 {
+            width: 40%;
+            height: 50vh;
+            background-image: url("/MHW/monsterIcon03.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: left;
+        }
+
+        .monsterPic03:hover {
+            width: 40%;
+            height: 50vh;
+            background-image: url("/MHW/monsterPic03.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .monsterInfo03 {
+            width: 60%;
+            padding-top: 100px;
+            color: white;
+            line-height: 40px;
+            float: right;
+            font-weight: 900;
+        }
+
+        .monster04 {
+            width: 100%;
+
+        }
+
+        .monsterPic04 {
+            width: 40%;
+            height: 40vh;
+            background-image: url("/MHW/monsterIcon04.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: right;
+
+        }
+
+        .monsterPic04:hover {
+            width: 40%;
+            height: 40vh;
+            background-image: url("/MHW/monsterPic04.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .monsterInfo04 {
+            width: 60%;
+            padding-top: 100px;
+            padding-left: 20px;
+            color: white;
+            line-height: 40px;
+            font-weight: 900;
+
+        }
+
+        #spacing03 {
+            width: 100%;
+            height: 100vh;
+
+
+            background-image: url("/MHW/spacingPic03.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+
+
+        }
+
+        .mask03 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .mask03:hover {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.0);
+            transition: 0.3s;
+        }
+
+
+        .monster050607 {
+            width: 100%;
+            background-image: url("/MHW/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .monster567 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .monster05 {
+            width: 33%;
+            float: left;
+        }
+
+        .monster05Area {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .monsterPic05 {
+            width: 100%;
+            height: 40%;
+            background-image: url("/MHW/monsterIcon05.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .monsterPic05:hover {
+            width: 100%;
+            height: 40%;
+            background-image: url("/MHW/monsterPic05.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .monsterInfo05 {
+            color: white;
+            line-height: 40px;
+            width: 100%;
+            text-align: center;
+            font-weight: 900;
+
+        }
+
+        .monster06 {
+            width: 34%;
+            float: left;
+        }
+
+        .monster06Area {
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .monsterPic06 {
+            width: 100%;
+            height: 40%;
+            background-image: url("/MHW/monsterIcon06.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+           
+
+        }
+
+        .monsterPic06:hover {
+            width: 100%;
+            height: 40%;
+            background-image: url("/MHW/monsterPic06.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .monsterInfo06 {
+            color: white;
+            line-height: 40px;
+            width: 100%;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .monster07 {
+            width: 33%;
+            float: left;
+        }
+
+        .monster07Area {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .monsterPic07 {
+            width: 100%;
+            height: 40%;
+            background-image: url("/MHW/monsterIcon07.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+
+        .monsterPic07:hover {
+            width: 100%;
+            height: 40%;
+            background-image: url("/MHW/monsterPic07.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .monsterInfo07 {
+            color: white;
+            line-height: 40px;
+            width: 100%;
+            text-align: center;
+            font-weight: 900;
+
+        }
+
+        .Footer {
+            width: 100%;
+            height: 35vh;
+        }
+
+        .FooterImage {
+            width: 100%;
+            height: 100%;
+            background-image: url("/MHW/footerPic01.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        .FooterText {
+            color: black;
+            font-size: 40px;
+            text-align: left;
+            line-height: 50px;
+            margin-left: 30px;
+            padding-top: 20px;
+        }
+
+        .FooterIcon {
+            width: 200px;
+            height: 170px;
+            background-image: url("/MHW/gif.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+        .FooterText p {
+            margin: 0;
+        }
+
+        .FooterImage:hover {
+            background-image: url("/MHW/footerPic02.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            transition: 0.3s;
+        }
+
+        .iconBar {
+            width: 50%;
+            height: 50px;
+            margin: auto;
+            padding-top: 10%;
+        }
+
+        .iconBar .fa-discord {
+            color: purple;
+            font-size: 50px;
+            margin-right: 20px;
+        }
+
+        .iconBar .fa-discord:hover {
+            color: blue;
+            font-size: 60px;
+            transition: 0.3s;
+        }
+
+        .iconBar .fa-instagram {
+            color: orange;
+            font-size: 50px;
+            margin-right: 20px;
+        }
+
+        .iconBar .fa-discord:hover {
+            color: blue;
+            font-size: 60px;
+            transition: 0.3s;
+        }
+
+        .iconBar .fa-instagram:hover {
+            color: red;
+            font-size: 60px;
+            transition: 0.3s;
+        }
+
+
+        .iconBar .fa-kickstarter {
+            color: lightgreen;
+            font-size: 50px;
+            margin-right: 20px;
+        }
+
+        .iconBar .fa-kickstarter:hover {
+            color: green;
+            font-size: 60px;
+            transition: 0.3s;
+        }
+
+        .iconBar .fa-linkedin {
+            color: blue;
+            font-size: 50px;
+            margin-right: 20px;
+        }
+
+        .iconBar .fa-linkedin:hover {
+            color: skyblue;
+            font-size: 60px;
+            transition: 0.3s;
+        }
+
+        .iconBar .fa-app-store {
+            color: skyblue;
+            font-size: 50px;
+            margin-right: 20px;
+        }
+
+        .iconBar .fa-app-store:hover {
+            color: blue;
+            font-size: 60px;
+            transition: 0.3s;
+        }
+
+        .iconBar .fa-reddit {
+            color: orangered;
+            font-size: 50px;
+            margin-right: 20px;
+        }
+
+        .iconBar .fa-reddit:hover {
+            color: red;
+            font-size: 60px;
+            transition: 0.3s;
+        }
+
+        .mask {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        .mask:hover {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            transition: 0.3s;
+        }
+
+        #spacing04 {
+            width: 100%;
+            background-image: url("/MHW/unknownMonster.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .unknownIcon {
+            background-image: url("/MHW/unknown.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+            padding: 30%;
+        }
+
+        .FooterImage h2 {
+            margin: 0;
+        }
+
+        .sideBar {
+            width: 100px;
+            height: 50vh;
+            position: fixed;
+            right: -75px;
+            bottom: 100px;
+        }
+
+        .sideBar:hover {
+            right: 0px;
+            bottom: 100px;
+            transition: 0.3s;
+        }
+
+        .SideBar_iconArea {
+            padding-top: 100px;
+        }
+
+        .sideBar .fa-angle-double-up {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            font-size: 75px;
+            color: white;
+            margin-bottom: 20px;
+            padding-top: 0px;
+            padding-left: 13px;
+        }
+
+        .sideBar .fa-headset {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            font-size: 75px;
+            color: white;
+            margin-bottom: 20px;
+            padding-top: 0;
+        }
+
+        .sideBar .fa-comments {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            font-size: 75px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sideBar .fa-cog {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            font-size: 75px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sideBar .fa-angle-double-down {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            font-size: 75px;
+            color: white;
+            margin-bottom: 20px;
+            padding-left: 13px;
+        }
+
+        .totheTop {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-image: url("/MHW/tothetop.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+
+        h1 {
+
+            text-shadow: 5px 5px black;
+        }
+
+        h2 {
+
+            text-shadow: 5px 5px black;
+        }
+
+        p {
+
+            text-shadow: 1px 1px black;
+
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            .Container {
+                width: 100%;
+            }
+
+            .Nav {
+                width: 100%;
+
+            }
+
+            .LogoArea {
+                width: 100%;
+            }
+
+            .Logo {
+                width: 60px;
+                height: 180px;
+            }
+
+            .icon {
+                width: 80%;
+                
+            }
+
+            .icon01 {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon01:hover {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon02 {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon02:hover {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+
+            .icon03 {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon03:hover {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+
+            .icon04 {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon04:hover {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+
+            .icon05 {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon05:hover {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon06 {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon06:hover {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon07 {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon07:hover {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+
+            .icon08 {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+            .icon08:hover {
+                width: 6vh;
+                height: 6vh;
+                margin-right: -5px;
+            }
+
+
+            .Banner {
+                width: 100%;
+            }
+
+            .Content {
+                width: 100%;
+            }
+
+            .monster01 {
+                width: 100%;
+                padding: 0;
+            }
+
+            .monster01_L {
+                width: 100%;
+            }
+
+            .monster01_R {
+                width: 100%;
+            }
+
+
+            .monsterPic01 {
+                width: 100%;
+                height: 50vh;
+            }
+
+            .monsterPic01:hover {
+                width: 50%;
+                height: 50%;
+                margin-left: 25%;
+            }
+
+            .monsterInfo01 {
+                width: 100%;
+                text-align: center;
+                font-size: 25px;
+                margin: auto;
+            }
+
+            .monster02 {
+                width: 100%;
+            }
+
+
+            .monsterPic02 {
+                width: 100%;
+                height: 55vh;
+            }
+
+            .monsterPic02:hover {
+                width: 100%;
+                height: 55vh;
+            }
+
+            .monsterInfo02 {
+                width: 100%;
+                text-align: center;
+                font-size: 25px;
+                padding: 0;
+            }
+
+            .monster0304 {
+                width: 100%;
+            }
+
+            .monster03 {
+                width: 100%;
+                height: 50vh;
+                position: relative;
+            }
+
+            .monsterPic03 {
+                width: 100%;
+                height: 50vh;
+                float: left;
+                position: absolute;
+                top: 0;
+            }
+
+            .monsterInfo03 {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding: 0px 100px;
+                position: absolute;
+                top: 0%;
+                font-size: 25px;
+            }
+
+            .monsterInfo03:hover {
+                background-image: url("/MHW/monsterPic03.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: 0.3s;
+            }
+
+            .monsterPic03:hover{
+                width: unset;
+                height: unset;
+            }
+
+           
+            .monster04 {
+                width: 100%;
+                height: 50vh;
+                position: relative;
+            }
+
+            .monsterPic04 {
+                width: 100%;
+                height: 50vh;
+                position: absolute;
+                top: 0;
+            }
+
+            .monsterPic04:hover{
+                width: unset;
+                height: unset;
+                background-image: unset;
+                background-size: unset;
+                background-repeat: unset;
+                background-position: unset;
+                transition: unset;
+            }
+
+            .monsterInfo04 {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding: 0px 100px;
+                position: absolute;
+                font-size: 25px;
+            }
+
+            .monsterInfo04:hover {
+                background-image: url("/MHW/monsterPic04.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: 0.3s;
+            }
+
+            .monster050607 {
+                width: 100%;
+            }
+
+
+            .monster05 {
+                width: 100%;
+            }
+
+            .monster05Area{
+                width: 100%;
+                height: 50vh;
+            }
+
+            .monsterPic05 {
+                width: 100%;
+                height: 25%;
+            }
+
+            .monsterPic05:hover {
+                width: 100%;
+                height: 25%;
+            }
+
+            .monsterInfo05 {
+                width: 100%;
+                font-size: 20px;
+                padding: 0px 20px;
+
+            }
+
+            .monster06 {
+                width: 100%;
+            }
+
+            .monster06Area{
+                width: 100%;
+                height: 50vh;
+            }
+
+            .monsterPic06 {
+                width: 100%;
+                height: 25%;
+            }
+
+            .monsterPic06:hover {
+                width: 100%;
+                height: 25%;
+            }
+
+            .monsterInfo06 {
+                width: 100%;
+                font-size: 20px;
+                padding: 0px 20px;
+            }
+
+            .monster07 {
+                width: 100%;
+            }
+
+            .monster07Area{
+                width: 100%;
+                height: 50vh;
+            }
+
+
+            .monsterPic07 {
+                width: 100%;
+                height: 25%;
+            }
+
+            .monsterPic07:hover {
+                width: 100%;
+                height: 25%;
+
+            }
+
+            .monsterInfo07 {
+                font-size: 20px;
+                padding: 0px 20px;
+            }
+
+            .spacing04 {
+                width: 100%;
+
+            }
+
+            .unknownIcon {
+                width: 50%;
+                height: 50%;
+            }
+
+            .mask {
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+
+            .mask:hover {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.0);
+                transition: 0.3s;
+            }
+
+            .Footer {
+                width: 100%;
+                height: 100%;
+            }
+
+            .sideBar {
+                width: 50px;
+                height: 25vh;
+            }
+
+            .sideBar:hover {
+                width: 50px;
+                height: 25vh;
+
+            }
+
+            .totheTop:hover .SideBar_iconArea {
+                display: block;
+            }
+
+            .SideBar_iconArea {
+                padding-top: 100px;
+                display: none;
+            }
+
+            .iconBar {
+                width: 40%;
+                height: 10%;
+                
+    
+            }
+
+
+        }
+
+        .floatFix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="Nav">
+            <div class="LogoArea">
+                <div class="Logo"></div>
+                <div class="icon">
+                    <a href="#monster01 ">
+                        <div class="icon01"></div>
+                    </a>
+                    <a href="#monster02">
+                        <div class="icon02"></div>
+                    </a>
+                    <a href="#monster03">
+                        <div class="icon03"></div>
+                    </a>
+                    <a href="#monster03">
+                        <div class="icon04"></div>
+                    </a>
+                    <a href="#monster05">
+                        <div class="icon05"></div>
+                    </a>
+                    <a href="#monster06">
+                        <div class="icon06"></div>
+                    </a>
+                    <a href="#monster07">
+                        <div class="icon07"></div>
+                    </a>
+                    <a href="#monster08">
+                        <div class="icon08"></div>
+                    </a>
+
+                </div>
+                <div class="floatFix"></div>
+            </div>
+
+
+        </div>
+        <div class="Banner"></div>
+        <div class="Content">
+
+            <div id="monster01" class="monster01">
+                <div class="block">
+                    <div class="monster01_L ">
+                        <div class="monsterPic01"></div>
+                    </div>
+                    <div class="monster01_R ">
+                        <div class="monsterInfo01 ">
+                            <h1>角龍</h1>
+                            <h2>種族: 飛龍種</h2>
+                            <p>潛入地底就難以處理，用巨大聲響引出地面會是有效的手段。巨角突進攻擊擁有驚人破壞力，但只要誘導向蟻塚，就能反過來利用這破壞力製造破綻。</p>
+                        </div>
+                    </div>
+                    <div class="floatFix"></div>
+                </div>
+
+            </div>
+
+            <div id="spacing01">
+                <div class="mask01"></div>
+            </div>
+            <div id="monster02" class="monster02">
+                <div class="monsterPic02"></div>
+                <div class="monsterInfo02">
+                    <h1>毒妖鳥</h1>
+                    <h2>種族: 鳥龍種</h2>
+                    <p>不僅擁有積極攻擊較弱對象的狡猾，也有在更強的魔物面前會示弱地縮起身體，然後一溜煙逃跑的特質，最好能利用這點。</p>
+                </div>
+                <div class="floatFix"></div>
+            </div>
+            <div id="spacing02">
+                <div class="mask02"></div>
+            </div>
+            <div class="monster0304">
+                <div id="monster03" class="monster03">
+                    <div class="monsterPic03"></div>
+                    <div class="monsterInfo03">
+                        <h1>火龍</h1>
+                        <h2>種族: 飛龍種</h2>
+                        <p>由於會在上空盤發動各種攻擊，最好利用閃光投射器令其跌回地上，在地上進行狩獵對獵人有十分大的優勢。另外只要破壞翅膀，起飛時似乎會產生破綻了。</p>
+                    </div>
+                    <div class="floatFix"></div>
+                </div>
+
+                <div id="monster04" class="monster04">
+                    <div class="monsterPic04"></div>
+                    <div class="monsterInfo04">
+                        <h1>雌火龍</h1>
+                        <h2>種族: 飛龍種</h2>
+                        <p>防備毒尾與火焰吐息攻擊，看準機會切斷尾巴或是提升火焰耐性，可以讓狩獵變得更加有利。只要奪走特的卵，無論天涯海角都會追逐過來。</p>
+                    </div>
+                    <div class="floatFix"></div>
+
+                </div>
+            </div>
+            <div id="spacing03">
+                <div class="mask03"></div>
+            </div>
+            <div class="monster050607">
+                <div class="monster567">
+                    <div id="monster05" class="monster05">
+                        <div class="monster05Area">
+                            <div class="monsterPic05"></div>
+                            <div class="monsterInfo05">
+                                <h1>麒麟</h1>
+                                <h2>種族: 古龍種</h2>
+                                <p>已確認身體環繞閃電時肉質會硬。以攻擊造成膽怯或是使用擁有龍封力的武器，同時防備帶電狀態，這些應對都會是狩獵的關鍵</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div id="monster06" class="monster06">
+                        <div class="monster06Area">
+                            <div class="monsterPic06"></div>
+                            <div class="monsterInfo06">
+                                <h1>炎王龍</h1>
+                                <h2>種族: 古龍種</h2>
+                                <p>會做出將鱗粉灑向周圍的行動，如果放置不理就會引發大範圍粉塵爆炸。必須以擁有龍封力的武器攻擊造成膽怯，並在交戰時一面抑制牠身上的火炎及粉塵。
+                                </p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                     
+
+                    <div id="monster07" class="monster07">
+                        <div class="monster07Area">
+                            <div class="monsterPic07"></div>
+                            <div class="monsterInfo07">
+                                <h1>滅盡龍</h1>
+                                <h2>種族: 古龍種</h2>
+                                <p>其行動純粹以破壞為目的，所以獲得如此頭銜的古龍。全身下上的尖刺除了獵人的攻擊外，甚至會因為自己的攻擊而損壞，但馬上就會再生出白色的尖刺，同時讓滅盡龍獲得更進一步的強化。
+                                </p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="floatFix"></div> 
+
+
+                </div>
+
+            </div>
+            <div id="spacing04">
+                <div class="mask">
+                    <div id="monster08" class="unknownIcon"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="footer" class="Footer">
+            <div class="FooterImage">
+                <div class="FooterText">
+                    <p>本網頁僅提供教學及練習使用, <p>若有冒犯請洽0912-345678</p>
+                    </p>
+                </div>
+                <div class="FooterIcon"></div>
+                <div class="iconBar">
+                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-kickstarter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-app-store"></i>
+                    <i class="fab fa-reddit"></i>
+                </div>
+                <div class="floatFix"></div>
+            </div>
+
+        </div>
+        <div class="sideBar">
+            <div id="click" class="totheTop">
+                <div class="SideBar_iconArea">
+                    <a href="#">
+                        <i class="fas fa-angle-double-up"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-headset"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-comments"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                    <a href="#footer">
+                        <i class="fas fa-angle-double-down"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
